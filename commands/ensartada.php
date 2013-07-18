@@ -18,7 +18,9 @@ class ensartada extends command {
 		if ( $num > 0 ) {
 			$url = "http://linux-mx.org/ensartada/json/$num";
 		} else {
-			$url = "http://linux-mx.org/ensartada/json/";	
+			$num = (int) 0;
+			$num = rand($num, 500);
+			$url = "http://linux-mx.org/ensartada/json/$num";	
 		}
 		$this->output = "";
 		try{
